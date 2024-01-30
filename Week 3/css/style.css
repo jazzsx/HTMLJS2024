@@ -1,7 +1,7 @@
 h1{
-    color: blue;
+    font-family: 'Honk', system-ui;
     text-decoration: underline;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
 }
 
 #Container{
@@ -56,4 +56,9 @@ img{
 
 #section-header{
     padding-left: 20px;
+}
+
+#contact-form{
+    width: 500px;
+    margin: auto;
 }
