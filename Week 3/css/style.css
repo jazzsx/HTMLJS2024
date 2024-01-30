@@ -1,8 +1,9 @@
- h1{
+h1{
     color: blue;
     text-decoration: underline;
     font-family: 'Courier New', Courier, monospace;
 }
+
 #Container{
     width: 1000px;
     height: 800px;
@@ -10,24 +11,29 @@
     margin: auto;
     background-color: aliceblue;
 }
+
 body,html{
     display: flex;
     justify-content: center;
     background-color: bisque;
 }
+
 #Nav{
     text-align: center;
     border: 1px green;
 }
+
 .nav-list{
     list-style: none;
     display: inline;
     text-align: center;
     padding: 15px;
 }
+        
 #Header{
     border: 2px solid blue;
 }
+
 #Content{
     border: 1px solid orange;
     height: 610px;
@@ -37,6 +43,7 @@ body,html{
     border: 1px solid purple;
     text-align: center;
 }
+
 .section-text{
     width: 750px;
     float: left;
@@ -44,7 +51,7 @@ body,html{
 }
 
 img{
-  float: left;
+    float: left;
 }
 
 #section-header{
