@@ -1,0 +1,55 @@
+body,html{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(171, 205, 219);
+}
+
+/*HEADERS*/
+h1{
+    text-align: center;
+}
+
+/*TEXT*/
+.synopsis{
+    margin-left: 500px; 
+    width: 370px;
+}
+
+/*CONTENT*/
+#content{
+    border: 1px;
+    height: 550px;
+}
+
+/*IMAGES*/ 
+img{
+    float: left;
+    height: 400px;
+    width: 350px;
+}
+
+/*NAV*/
+#nav{
+    text-align: center;
+}
+
+#nav-list{
+    text-align: center;
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+/*CONTAINER*/
+#container{
+    width: 900px;
+    height: 800px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: white;
+}
+
+/*FOOTER*/
+#footer{
+    text-align: center;
+}
