@@ -5,13 +5,16 @@ body,html{
 }
 
 /*HEADERS*/
-h1{
+h1, h2, h3{
+    font-family: starbornregular;
     text-align: center;
 }
 
 /*TEXT*/
 .synopsis{
-    margin-left: 500px; 
+    float: right; 
+    margin-right: 90px;
+    margin-top: 30px;
     width: 370px;
 }
 
@@ -21,11 +24,20 @@ h1{
     height: 550px;
 }
 
-/*IMAGES*/ 
-img{
+/*IMAGES, VIDEO*/ 
+#poster{
     float: left;
-    height: 400px;
-    width: 350px;
+    img{
+        margin-left: 60px;
+        margin-top: 50px;
+        width: 280px;
+        height: 360px
+    }
+}
+
+#video{
+    /*top right bottom left*/
+    margin: 35px 15px 10px 380px;
 }
 
 /*NAV*/
