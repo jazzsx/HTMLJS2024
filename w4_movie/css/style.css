@@ -11,17 +11,37 @@ h1, h2, h3{
 }
 
 /*TEXT*/
+
+p{
+    font-family: 'Concert One', sans-serif;
+    font-size: large;
+}
 .synopsis{
     float: right; 
-    margin-right: 90px;
+    margin-right: 100px;
     margin-top: 30px;
     width: 370px;
+}
+
+.personalreview{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*CONTENT*/
 #content{
     border: 1px;
     height: 550px;
+}
+
+.info{
+    ul{
+        text-align: center;
+        list-style: none;
+        margin: 5px 15px auto 15px;
+        font-family: 'Concert One', sans-serif;
+    }
 }
 
 /*IMAGES, VIDEO*/ 
@@ -35,9 +55,29 @@ h1, h2, h3{
     }
 }
 
+.characters{
+    img{
+        height: 50px;
+        font-size: medium;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        text-align: center;
+    }
+}
+
 #video{
     /*top right bottom left*/
-    margin: 35px 15px 10px 380px;
+    margin: 35px 15px 8px 380px;
+}
+
+#ponyoGIF{
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    height: 250px;
 }
 
 /*NAV*/
@@ -46,6 +86,7 @@ h1, h2, h3{
 }
 
 #nav-list{
+    font-family: 'Concert One', sans-serif;
     text-align: center;
     list-style: none;
     display: inline;
@@ -55,7 +96,7 @@ h1, h2, h3{
 /*CONTAINER*/
 #container{
     width: 900px;
-    height: 800px;
+    height: 850px;
     border: 1px solid black;
     margin: auto;
     background-color: white;
@@ -64,4 +105,6 @@ h1, h2, h3{
 /*FOOTER*/
 #footer{
     text-align: center;
+    font-family: 'Concert One', sans-serif;
+    padding: 10px;
 }
