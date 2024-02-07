@@ -84,15 +84,16 @@ p{
 /*NAV*/
 #nav{
     text-align: center;
-}
-
-#nav-list{
-    font-family: 'Concert One', sans-serif;
+    li{font-family: 'Concert One', sans-serif;
     text-align: center;
     list-style: none;
     display: inline;
     padding: 10px;
+
+    }
 }
+
+
 
 /*CONTAINER*/
 #container{
@@ -106,5 +107,13 @@ p{
 /*FOOTER*/
 #footer{
     text-align: center;
+    margin-right: 120px;
     font-family: 'Concert One', sans-serif;
+    img{
+        height: 89px;
+        width: 120px;
+        float: left;
+        margin-left: 10px;
+    }
+
 }
