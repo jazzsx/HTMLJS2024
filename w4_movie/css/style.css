@@ -65,6 +65,7 @@ p{
     }
     p{
         text-align: center;
+        font-size: small;
     }
 }
 
@@ -106,5 +107,4 @@ p{
 #footer{
     text-align: center;
     font-family: 'Concert One', sans-serif;
-    padding: 10px;
 }
