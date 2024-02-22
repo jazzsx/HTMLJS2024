@@ -71,9 +71,10 @@
         function alertName(e)
         {
             //get each *value* from the form elements (first name, last name, hours worked, hourly rate) and store them into vars
-            var fname = " "
-            var lname = " "
-
+            var fname = document.querySelector(`#first`)
+            var lname = document.querySelector(`#last`)
+            var hours = document.querySelector(`#hours`)
+            var rate = doucment.querySelector(`#rate`)
             //*USE THE FOLLOWING VARIABLE NAMES:
             //fname --> first name, #first
             //lname --> last name, #last
@@ -82,16 +83,16 @@
 
             //console.log() all four values
             
-            console.log()
-            console.log()
-            console.log()
-            console.log()
+            console.log(fname)
+            console.log(lname)
+            console.log(hours)
+            console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full 
+            var full = fname + lname
 
             //console.log() the full name value
-            console.log()
+            console.log(full)
 
 
             //convert both hours and rate to Number() data types

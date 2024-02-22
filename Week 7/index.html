@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Week 7 | Forms and JavaScript</title>
+        <style>
+            table, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td{
+                padding: 5px
+            }
+
+            #display-info{
+                background-color: bisque;
+                border: 1px solid black;
+                width: 600px;
+                height: 400px;
+                border-radius: 10px;
+                padding: 10px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Week 7 | Forms and JavaScripts Demo</h1>
+        <form action="#" method="get">
+            <table>
+                <!--First Name Row-->
+                <tr>
+                    <td>
+                        <label for="first">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="first" id="first" placeholder="Please type here..." required>
+                    </td>
+                </tr>
+                <!--Last Name Row-->
+                <tr>
+                    <td>
+                        <label for="last">Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="last" id="last" placeholder="Please type here..." required>
+                    </td>
+                </tr>
+                <!--Age Row-->
+                <tr>
+                    <td>
+                        <label for="age">Your Age:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="age" id="age" placeholder="Please type here..." required>
+                    </td>
+                </tr>
+                <!--Button-->
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Get Age" id="enter-age">
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+            <span id="error" style="color: red; font-size: 20px;font-style: italic;"></span>
+            <br>
+            <h2>Display Info From Form</h2>
+            <div id="display-info">
+            </div>
+        </form>
+        <script>
+            //this adds the button and the event listener 
+            var submitButton = document.querySelector(`#enter-age`);
+            submitButton.addEventListener("click", function(e){
+                e.preventDefault();
+                calculateanimalAge();
+            });
+                
+
+            //function is grabbing data from the form so it can display on the page 
+            function calculateanimalAge(){
+                
+                var firstName = document.querySelector(`#first`);
+                var lastName = document.querySelector(`#last`);
+                var age = document.querySelector(`#age`);
+                var display = document.querySelector(`#display-info`);
+
+                //validating that ALL data has been entered in or not 
+                if(firstName.value =='' || lastName.value =='' || age.value ==''){
+                    error.innerHTML = "Please enter some missing info."
+                    return;
+                }
+
+                var dogYears = (Number(age.value) * 7).toFixed(); 
+                var catYears = (Number(age.value) * 4).toFixed(); 
+                
+                display.innerHTML = `Your info will be displayed here. :><br>Here is your info:<br><br>Your name is ${firstName.value} ${lastName.value}. <br>Your human age is ${age.value}. Your age in dog years is ${dogYears}<br>Your age in cat years is ${catYears}.`;
+                submitButton.removeEventListener("click");
+            }
+
+        </script>
+    </body>
+</html>
