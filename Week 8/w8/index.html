@@ -41,7 +41,7 @@
 
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		button.addEventListener("click", calcAndDisplay)
+		submit.addEventListener("click", calcAndDisplay)
 		
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
@@ -98,8 +98,7 @@
 			for(person of people)
             {
 				//Loop through each property in the object
-				for(key in people[person])
-                {
+			
 					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
 					//Output will resemble:
 					//FIRST: Ivan
@@ -108,7 +107,6 @@
 					output += `LAST: ${person.lastName.toUpperCase()}<br>`;
 					output += "<hr>"
 
-                }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
 				
 
